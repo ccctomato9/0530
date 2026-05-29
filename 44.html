@@ -120,8 +120,6 @@ test
             "腿腿腿",
             "腳掌！"
         ];
-
-        // 手勢控制組件
         AFRAME.registerComponent('touch-transform', {
             init: function () {
                 const el = this.el;
@@ -181,8 +179,6 @@ test
                 });
             }
         });
-
-        // 監聽 Found 與 Lost 事件
         window.addEventListener("load", () => {
             const targets = document.querySelectorAll(".ar-target");
             const customDiv = document.querySelector("#custom-text");
